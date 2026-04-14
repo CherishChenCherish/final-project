@@ -1,0 +1,128 @@
+[
+  {
+    "fs": "A_price",
+    "model": "Ridge",
+    "fold": "train_c1_test_c2",
+    "mae": 0.7688672566316187,
+    "dir_acc": 0.5549215406562055
+  },
+  {
+    "fs": "A_price",
+    "model": "Ridge",
+    "fold": "train_c12_test_c3",
+    "mae": 0.5271232403092825,
+    "dir_acc": 0.44930555555555557
+  },
+  {
+    "fs": "A_price",
+    "model": "Ridge",
+    "fold": "train_c123_test_c4",
+    "mae": 0.16110252490651533,
+    "dir_acc": 0.4908256880733945
+  },
+  {
+    "fs": "A_price",
+    "model": "RF",
+    "fold": "train_c1_test_c2",
+    "mae": 0.26359035324911484,
+    "dir_acc": 0.4893009985734665
+  },
+  {
+    "fs": "A_price",
+    "model": "RF",
+    "fold": "train_c12_test_c3",
+    "mae": 0.4144834034997104,
+    "dir_acc": 0.4465277777777778
+  },
+  {
+    "fs": "A_price",
+    "model": "RF",
+    "fold": "train_c123_test_c4",
+    "mae": 0.1736347940446307,
+    "dir_acc": 0.4724770642201835
+  },
+  {
+    "fs": "A_price",
+    "model": "XGBoost",
+    "fold": "train_c1_test_c2",
+    "mae": 0.25927179087769303,
+    "dir_acc": 0.4921540656205421
+  },
+  {
+    "fs": "A_price",
+    "model": "XGBoost",
+    "fold": "train_c12_test_c3",
+    "mae": 0.325633556606765,
+    "dir_acc": 0.44027777777777777
+  },
+  {
+    "fs": "A_price",
+    "model": "XGBoost",
+    "fold": "train_c123_test_c4",
+    "mae": 0.15878403095525875,
+    "dir_acc": 0.463302752293578
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "Ridge",
+    "fold": "train_c1_test_c2",
+    "mae": 11.652079945371877,
+    "dir_acc": 0.5863052781740371
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "Ridge",
+    "fold": "train_c12_test_c3",
+    "mae": 3.0445453410433485,
+    "dir_acc": 0.45555555555555555
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "Ridge",
+    "fold": "train_c123_test_c4",
+    "mae": 0.14274187938752894,
+    "dir_acc": 0.5856269113149847
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "RF",
+    "fold": "train_c1_test_c2",
+    "mae": 0.35890203270792814,
+    "dir_acc": 0.6012838801711841
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "RF",
+    "fold": "train_c12_test_c3",
+    "mae": 0.2712004174951635,
+    "dir_acc": 0.4395833333333333
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "RF",
+    "fold": "train_c123_test_c4",
+    "mae": 0.11627387715801481,
+    "dir_acc": 0.44801223241590216
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "XGBoost",
+    "fold": "train_c1_test_c2",
+    "mae": 0.3544700713825043,
+    "dir_acc": 0.5691868758915835
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "XGBoost",
+    "fold": "train_c12_test_c3",
+    "mae": 0.2987528137317244,
+    "dir_acc": 0.45902777777777776
+  },
+  {
+    "fs": "B_price+onchain",
+    "model": "XGBoost",
+    "fold": "train_c123_test_c4",
+    "mae": 0.12398128082481348,
+    "dir_acc": 0.5458715596330275
+  }
+]

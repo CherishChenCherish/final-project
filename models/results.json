@@ -1,0 +1,1114 @@
+{
+  "A_price_only__Ridge": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "Ridge",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31405377980720445,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          12,
+          12,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "Ridge",
+      "n_train": 1927,
+      "n_test": 1440,
+      "macro_f1": 0.4996856515993277,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1219,
+          17
+        ],
+        [
+          0,
+          8,
+          17
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    }
+  ],
+  "A_price_only__LinearSVM": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "LinearSVM",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "LinearSVM",
+      "n_train": 1927,
+      "n_test": 1440,
+      "macro_f1": 0.5359179506913156,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1230,
+          6
+        ],
+        [
+          0,
+          9,
+          16
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    }
+  ],
+  "A_price_only__RandomForest": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "RandomForest",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "RandomForest",
+      "n_train": 1927,
+      "n_test": 1440,
+      "macro_f1": 0.5175779997533604,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1226,
+          10
+        ],
+        [
+          0,
+          9,
+          16
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    }
+  ],
+  "A_price_only__XGBoost": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "XGBoost",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "XGBoost",
+      "n_train": 1927,
+      "n_test": 1440,
+      "macro_f1": 0.4341841841841842,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1231,
+          5
+        ],
+        [
+          0,
+          18,
+          7
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns"
+      ]
+    }
+  ],
+  "B_price_onchain__Ridge": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "Ridge",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.14665186952008658,
+      "confusion_matrix": [
+        [
+          140,
+          0,
+          0
+        ],
+        [
+          1072,
+          166,
+          0
+        ],
+        [
+          24,
+          0,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "Ridge",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.30792227204783257,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1236,
+          0
+        ],
+        [
+          0,
+          25,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ],
+  "B_price_onchain__LinearSVM": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "LinearSVM",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "LinearSVM",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.30792227204783257,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1236,
+          0
+        ],
+        [
+          0,
+          25,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ],
+  "B_price_onchain__RandomForest": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "RandomForest",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "RandomForest",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.9002059732774704,
+      "confusion_matrix": [
+        [
+          175,
+          4,
+          0
+        ],
+        [
+          0,
+          1236,
+          0
+        ],
+        [
+          0,
+          11,
+          14
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ],
+  "B_price_onchain__XGBoost": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "XGBoost",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.6634666666666666,
+      "confusion_matrix": [
+        [
+          140,
+          0,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "XGBoost",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.9668528999529568,
+      "confusion_matrix": [
+        [
+          161,
+          18,
+          0
+        ],
+        [
+          0,
+          1234,
+          2
+        ],
+        [
+          0,
+          0,
+          25
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "CapMVRVCur",
+        "MVRV_Z",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "CapMVRVCur_roc_7d",
+        "CapMVRVCur_roc_30d",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ],
+  "C_ablation_no_mvrv__Ridge": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "Ridge",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.21410956984727478,
+      "confusion_matrix": [
+        [
+          140,
+          0,
+          0
+        ],
+        [
+          916,
+          322,
+          0
+        ],
+        [
+          24,
+          0,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "Ridge",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.30792227204783257,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1236,
+          0
+        ],
+        [
+          0,
+          25,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ],
+  "C_ablation_no_mvrv__LinearSVM": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "LinearSVM",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "LinearSVM",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.30792227204783257,
+      "confusion_matrix": [
+        [
+          0,
+          179,
+          0
+        ],
+        [
+          0,
+          1236,
+          0
+        ],
+        [
+          0,
+          25,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ],
+  "C_ablation_no_mvrv__RandomForest": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "RandomForest",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "RandomForest",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.3373660763201287,
+      "confusion_matrix": [
+        [
+          8,
+          171,
+          0
+        ],
+        [
+          0,
+          1236,
+          0
+        ],
+        [
+          0,
+          25,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ],
+  "C_ablation_no_mvrv__XGBoost": [
+    {
+      "fold": "train_c1_test_c2",
+      "model": "XGBoost",
+      "n_train": 525,
+      "n_test": 1402,
+      "macro_f1": 0.31262626262626264,
+      "confusion_matrix": [
+        [
+          0,
+          140,
+          0
+        ],
+        [
+          0,
+          1238,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    },
+    {
+      "fold": "train_c12_test_c3",
+      "model": "XGBoost",
+      "n_train": 1593,
+      "n_test": 1440,
+      "macro_f1": 0.33023585383135945,
+      "confusion_matrix": [
+        [
+          6,
+          173,
+          0
+        ],
+        [
+          0,
+          1236,
+          0
+        ],
+        [
+          0,
+          25,
+          0
+        ]
+      ],
+      "features_used": [
+        "SMA_30",
+        "Price_SMA_Ratio",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "MACD_Hist",
+        "Volatility_30d",
+        "Returns",
+        "AdrActCnt",
+        "HashRate",
+        "TxCnt",
+        "Puell_Multiple",
+        "NVT_proxy",
+        "NetFlowExUSD",
+        "NetFlowExUSD_7d",
+        "ExchangeSupplyRatio",
+        "AdrActCnt_roc_7d",
+        "AdrActCnt_roc_30d",
+        "HashRate_roc_7d",
+        "HashRate_roc_30d",
+        "AdrActCnt_log",
+        "HashRate_log",
+        "TxCnt_log"
+      ]
+    }
+  ]
+}
