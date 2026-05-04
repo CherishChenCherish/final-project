@@ -1,0 +1,6497 @@
+[
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 391,
+      "1": 1509,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.30792227204783257,
+    "weighted_f1": 0.7928998505231689,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8583333333333333,
+        "recall": 1.0,
+        "f1": 0.9237668161434978,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 3364,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 570,
+      "1": 2745,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31405377980720445,
+    "weighted_f1": 0.8319513111297842,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        12,
+        12,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8906474820143885,
+        "recall": 1.0,
+        "f1": 0.9421613394216134,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 391,
+      "1": 1509,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.4996856515993277,
+    "weighted_f1": 0.8020624926046154,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1219,
+        17
+      ],
+      [
+        0,
+        8,
+        17
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8669985775248933,
+        "recall": 0.9862459546925566,
+        "f1": 0.9227857683573051,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.5,
+        "recall": 0.68,
+        "f1": 0.576271186440678,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 3364,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 570,
+      "1": 2745,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    },
+    "best_C": 1.0
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 391,
+      "1": 1509,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.49454914518697396,
+    "weighted_f1": 0.8040842038952176,
+    "accuracy": 0.8625,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1230,
+        6
+      ],
+      [
+        0,
+        13,
+        12
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8649789029535865,
+        "recall": 0.9951456310679612,
+        "f1": 0.9255079006772009,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.6666666666666666,
+        "recall": 0.48,
+        "f1": 0.5581395348837209,
+        "support": 25.0
+      }
+    },
+    "best_C": 10.0
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 3364,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 570,
+      "1": 2745,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 391,
+      "1": 1509,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.5134206425259653,
+    "weighted_f1": 0.8045367869829931,
+    "accuracy": 0.8618055555555556,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1225,
+        11
+      ],
+      [
+        0,
+        9,
+        16
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8669497523000708,
+        "recall": 0.9911003236245954,
+        "f1": 0.9248773121932805,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.5925925925925926,
+        "recall": 0.64,
+        "f1": 0.6153846153846154,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 3364,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 570,
+      "1": 2745,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 391,
+      "1": 1509,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.4341841841841842,
+    "weighted_f1": 0.7998185685685685,
+    "accuracy": 0.8597222222222223,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1231,
+        5
+      ],
+      [
+        0,
+        18,
+        7
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8620448179271709,
+        "recall": 0.9959546925566343,
+        "f1": 0.9241741741741741,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.5833333333333334,
+        "recall": 0.28,
+        "f1": 0.3783783783783784,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 3364,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 570,
+      "1": 2745,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.30792227204783257,
+    "weighted_f1": 0.7928998505231689,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8583333333333333,
+        "recall": 1.0,
+        "f1": 0.9237668161434978,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.14711959452172976,
+    "weighted_f1": 0.23024924877387803,
+    "accuracy": 0.21897289586305277,
+    "confusion_matrix": [
+      [
+        140,
+        0,
+        0
+      ],
+      [
+        1071,
+        167,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.11336032388663968,
+        "recall": 1.0,
+        "f1": 0.20363636363636364,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.13489499192245558,
+        "f1": 0.23772241992882562,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.30792227204783257,
+    "weighted_f1": 0.7928998505231689,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8583333333333333,
+        "recall": 1.0,
+        "f1": 0.9237668161434978,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    },
+    "best_C": 1.0
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.30792227204783257,
+    "weighted_f1": 0.7928998505231689,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8583333333333333,
+        "recall": 1.0,
+        "f1": 0.9237668161434978,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    },
+    "best_C": 10.0
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.9002059732774704,
+    "weighted_f1": 0.9885217738207097,
+    "accuracy": 0.9895833333333334,
+    "confusion_matrix": [
+      [
+        175,
+        4,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        11,
+        14
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.9776536312849162,
+        "f1": 0.9887005649717514,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.988009592326139,
+        "recall": 1.0,
+        "f1": 0.9939686369119421,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 1.0,
+        "recall": 0.56,
+        "f1": 0.717948717948718,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.6634666666666666,
+    "weighted_f1": 0.9744045649072753,
+    "accuracy": 0.9828815977175464,
+    "confusion_matrix": [
+      [
+        140,
+        0,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.9809825673534073,
+        "recall": 1.0,
+        "f1": 0.9904,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.9668528999529568,
+    "weighted_f1": 0.9858515969665959,
+    "accuracy": 0.9861111111111112,
+    "confusion_matrix": [
+      [
+        161,
+        18,
+        0
+      ],
+      [
+        0,
+        1234,
+        2
+      ],
+      [
+        0,
+        0,
+        25
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.8994413407821229,
+        "f1": 0.9470588235294117,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.9856230031948882,
+        "recall": 0.9983818770226537,
+        "f1": 0.9919614147909968,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.9259259259259259,
+        "recall": 1.0,
+        "f1": 0.9615384615384616,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.30792227204783257,
+    "weighted_f1": 0.7928998505231689,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8583333333333333,
+        "recall": 1.0,
+        "f1": 0.9237668161434978,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "Majority",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.21851005358530873,
+    "weighted_f1": 0.3974704244262577,
+    "accuracy": 0.33737517831669045,
+    "confusion_matrix": [
+      [
+        140,
+        0,
+        0
+      ],
+      [
+        905,
+        333,
+        0
+      ],
+      [
+        24,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.13096351730589337,
+        "recall": 1.0,
+        "f1": 0.23159636062861869,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.2689822294022617,
+        "f1": 0.42393380012730747,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.30792227204783257,
+    "weighted_f1": 0.7928998505231689,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8583333333333333,
+        "recall": 1.0,
+        "f1": 0.9237668161434978,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "Ridge",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    },
+    "best_C": 1.0
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.30792227204783257,
+    "weighted_f1": 0.7928998505231689,
+    "accuracy": 0.8583333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        179,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8583333333333333,
+        "recall": 1.0,
+        "f1": 0.9237668161434978,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    },
+    "best_C": 10.0
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "LinearSVM",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.3373660763201287,
+    "weighted_f1": 0.8059131307786392,
+    "accuracy": 0.8638888888888889,
+    "confusion_matrix": [
+      [
+        8,
+        171,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.0446927374301676,
+        "f1": 0.0855614973262032,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8631284916201117,
+        "recall": 1.0,
+        "f1": 0.9265367316341829,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "RandomForest",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 251,
+      "1": 271
+    },
+    "test_class_dist": {
+      "0": 140,
+      "1": 1238,
+      "2": 24
+    },
+    "skipped": false,
+    "macro_f1": 0.31262626262626264,
+    "weighted_f1": 0.8281697142610124,
+    "accuracy": 0.8830242510699001,
+    "confusion_matrix": [
+      [
+        0,
+        140,
+        0
+      ],
+      [
+        0,
+        1238,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 140.0
+      },
+      "1": {
+        "precision": 0.8830242510699001,
+        "recall": 1.0,
+        "f1": 0.9378787878787879,
+        "support": 1238.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 140,
+      "1": 1429,
+      "2": 24
+    },
+    "test_class_dist": {
+      "0": 179,
+      "1": 1236,
+      "2": 25
+    },
+    "skipped": false,
+    "macro_f1": 0.33023585383135945,
+    "weighted_f1": 0.8027447110031379,
+    "accuracy": 0.8625,
+    "confusion_matrix": [
+      [
+        6,
+        173,
+        0
+      ],
+      [
+        0,
+        1236,
+        0
+      ],
+      [
+        0,
+        25,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 1.0,
+        "recall": 0.0335195530726257,
+        "f1": 0.06486486486486487,
+        "support": 179.0
+      },
+      "1": {
+        "precision": 0.8619246861924686,
+        "recall": 1.0,
+        "f1": 0.9258426966292135,
+        "support": 1236.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 25.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_base",
+    "model": "XGBoost",
+    "n_train": 3033,
+    "n_test": 684,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 319,
+      "1": 2665,
+      "2": 49
+    },
+    "test_class_dist": {
+      "1": 684
+    },
+    "skipped": true,
+    "skip_reason": "only 1 class in test (class 1); test set is trivial"
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.14855875831485588,
+    "weighted_f1": 0.12779020151762924,
+    "accuracy": 0.2867332382310984,
+    "confusion_matrix": [
+      [
+        0,
+        423,
+        0
+      ],
+      [
+        0,
+        402,
+        0
+      ],
+      [
+        0,
+        577,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.2867332382310984,
+        "recall": 1.0,
+        "f1": 0.44567627494456763,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 551,
+      "1": 611,
+      "2": 762
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.1778682959945689,
+    "weighted_f1": 0.19417288979407107,
+    "accuracy": 0.3638888888888889,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        445
+      ],
+      [
+        0,
+        0,
+        471
+      ],
+      [
+        0,
+        0,
+        524
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.3638888888888889,
+        "recall": 1.0,
+        "f1": 0.5336048879837068,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 3364,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 996,
+      "1": 1082,
+      "2": 1286
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.11476793248945148,
+    "weighted_f1": 0.07159834320442844,
+    "accuracy": 0.20795107033639143,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        198
+      ],
+      [
+        0,
+        0,
+        320
+      ],
+      [
+        0,
+        0,
+        136
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.20795107033639143,
+        "recall": 1.0,
+        "f1": 0.34430379746835443,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.20326585808648526,
+    "weighted_f1": 0.17957911764438128,
+    "accuracy": 0.3017118402282454,
+    "confusion_matrix": [
+      [
+        37,
+        386,
+        0
+      ],
+      [
+        22,
+        380,
+        0
+      ],
+      [
+        31,
+        540,
+        6
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.4111111111111111,
+        "recall": 0.08747044917257683,
+        "f1": 0.1442495126705653,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.29096477794793263,
+        "recall": 0.945273631840796,
+        "f1": 0.4449648711943794,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 1.0,
+        "recall": 0.010398613518197574,
+        "f1": 0.02058319039451115,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 551,
+      "1": 611,
+      "2": 762
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.15738284703801944,
+    "weighted_f1": 0.1459070144414972,
+    "accuracy": 0.3090277777777778,
+    "confusion_matrix": [
+      [
+        445,
+        0,
+        0
+      ],
+      [
+        471,
+        0,
+        0
+      ],
+      [
+        524,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3090277777777778,
+        "recall": 1.0,
+        "f1": 0.47214854111405835,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 3364,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 996,
+      "1": 1082,
+      "2": 1286
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.20411021080038974,
+    "weighted_f1": 0.20542718483867933,
+    "accuracy": 0.3302752293577982,
+    "confusion_matrix": [
+      [
+        194,
+        4,
+        0
+      ],
+      [
+        297,
+        21,
+        2
+      ],
+      [
+        114,
+        21,
+        1
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.32066115702479336,
+        "recall": 0.9797979797979798,
+        "f1": 0.48318804483188044,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.45652173913043476,
+        "recall": 0.065625,
+        "f1": 0.11475409836065574,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.3333333333333333,
+        "recall": 0.007352941176470588,
+        "f1": 0.014388489208633094,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.2097639234185419,
+    "weighted_f1": 0.18313343039981406,
+    "accuracy": 0.3024251069900143,
+    "confusion_matrix": [
+      [
+        51,
+        372,
+        0
+      ],
+      [
+        29,
+        373,
+        0
+      ],
+      [
+        64,
+        513,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3541666666666667,
+        "recall": 0.12056737588652482,
+        "f1": 0.17989417989417988,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.29650238473767887,
+        "recall": 0.927860696517413,
+        "f1": 0.4493975903614458,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 577.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 551,
+      "1": 611,
+      "2": 762
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.15738284703801944,
+    "weighted_f1": 0.1459070144414972,
+    "accuracy": 0.3090277777777778,
+    "confusion_matrix": [
+      [
+        445,
+        0,
+        0
+      ],
+      [
+        471,
+        0,
+        0
+      ],
+      [
+        524,
+        0,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3090277777777778,
+        "recall": 1.0,
+        "f1": 0.47214854111405835,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 524.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 3364,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 996,
+      "1": 1082,
+      "2": 1286
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.19578548763967304,
+    "weighted_f1": 0.1973515741899461,
+    "accuracy": 0.327217125382263,
+    "confusion_matrix": [
+      [
+        195,
+        3,
+        0
+      ],
+      [
+        300,
+        19,
+        1
+      ],
+      [
+        115,
+        21,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.319672131147541,
+        "recall": 0.9848484848484849,
+        "f1": 0.48267326732673266,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.4418604651162791,
+        "recall": 0.059375,
+        "f1": 0.1046831955922865,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.3359815946643356,
+    "weighted_f1": 0.32823721719314664,
+    "accuracy": 0.34807417974322397,
+    "confusion_matrix": [
+      [
+        120,
+        250,
+        53
+      ],
+      [
+        69,
+        253,
+        80
+      ],
+      [
+        200,
+        262,
+        115
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.30848329048843187,
+        "recall": 0.28368794326241137,
+        "f1": 0.2955665024630542,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.330718954248366,
+        "recall": 0.6293532338308457,
+        "f1": 0.43359040274207367,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.4637096774193548,
+        "recall": 0.19930675909878684,
+        "f1": 0.2787878787878788,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 551,
+      "1": 611,
+      "2": 762
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.20609474620872167,
+    "weighted_f1": 0.194562991096614,
+    "accuracy": 0.32013888888888886,
+    "confusion_matrix": [
+      [
+        423,
+        3,
+        19
+      ],
+      [
+        411,
+        31,
+        29
+      ],
+      [
+        506,
+        11,
+        7
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3156716417910448,
+        "recall": 0.950561797752809,
+        "f1": 0.47394957983193275,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.6888888888888889,
+        "recall": 0.06581740976645435,
+        "f1": 0.12015503875968993,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.12727272727272726,
+        "recall": 0.013358778625954198,
+        "f1": 0.024179620034542316,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 3364,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 996,
+      "1": 1082,
+      "2": 1286
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.17379723092392776,
+    "weighted_f1": 0.16778684493720403,
+    "accuracy": 0.3058103975535168,
+    "confusion_matrix": [
+      [
+        191,
+        0,
+        7
+      ],
+      [
+        300,
+        9,
+        11
+      ],
+      [
+        127,
+        9,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.30906148867313915,
+        "recall": 0.9646464646464646,
+        "f1": 0.4681372549019608,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.5,
+        "recall": 0.028125,
+        "f1": 0.05325443786982249,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.31173554900866635,
+    "weighted_f1": 0.3036024740176401,
+    "accuracy": 0.3174037089871612,
+    "confusion_matrix": [
+      [
+        126,
+        220,
+        77
+      ],
+      [
+        75,
+        210,
+        117
+      ],
+      [
+        210,
+        258,
+        109
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.30656934306569344,
+        "recall": 0.2978723404255319,
+        "f1": 0.302158273381295,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.30523255813953487,
+        "recall": 0.5223880597014925,
+        "f1": 0.3853211009174312,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.35973597359735976,
+        "recall": 0.18890814558058924,
+        "f1": 0.24772727272727274,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 1924,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 551,
+      "1": 611,
+      "2": 762
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.19454356204930437,
+    "weighted_f1": 0.1837416571802074,
+    "accuracy": 0.3034722222222222,
+    "confusion_matrix": [
+      [
+        403,
+        13,
+        29
+      ],
+      [
+        411,
+        25,
+        35
+      ],
+      [
+        502,
+        13,
+        9
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.30623100303951367,
+        "recall": 0.9056179775280899,
+        "f1": 0.45769449176604204,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.49019607843137253,
+        "recall": 0.05307855626326964,
+        "f1": 0.09578544061302682,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.1232876712328767,
+        "recall": 0.01717557251908397,
+        "f1": 0.03015075376884422,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 3364,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns"
+    ],
+    "train_class_dist": {
+      "0": 996,
+      "1": 1082,
+      "2": 1286
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.17814169570267133,
+    "weighted_f1": 0.17459003292523098,
+    "accuracy": 0.3103975535168196,
+    "confusion_matrix": [
+      [
+        191,
+        7,
+        0
+      ],
+      [
+        306,
+        12,
+        2
+      ],
+      [
+        125,
+        11,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3070739549839228,
+        "recall": 0.9646464646464646,
+        "f1": 0.4658536585365854,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.4,
+        "recall": 0.0375,
+        "f1": 0.06857142857142857,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.14855875831485588,
+    "weighted_f1": 0.12779020151762924,
+    "accuracy": 0.2867332382310984,
+    "confusion_matrix": [
+      [
+        0,
+        423,
+        0
+      ],
+      [
+        0,
+        402,
+        0
+      ],
+      [
+        0,
+        577,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.2867332382310984,
+        "recall": 1.0,
+        "f1": 0.44567627494456763,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.1778682959945689,
+    "weighted_f1": 0.19417288979407107,
+    "accuracy": 0.3638888888888889,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        445
+      ],
+      [
+        0,
+        0,
+        471
+      ],
+      [
+        0,
+        0,
+        524
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.3638888888888889,
+        "recall": 1.0,
+        "f1": 0.5336048879837068,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.11476793248945148,
+    "weighted_f1": 0.07159834320442844,
+    "accuracy": 0.20795107033639143,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        198
+      ],
+      [
+        0,
+        0,
+        320
+      ],
+      [
+        0,
+        0,
+        136
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.20795107033639143,
+        "recall": 1.0,
+        "f1": 0.34430379746835443,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.28780694064721263,
+    "weighted_f1": 0.30040031276342505,
+    "accuracy": 0.32952924393723254,
+    "confusion_matrix": [
+      [
+        206,
+        11,
+        206
+      ],
+      [
+        182,
+        28,
+        192
+      ],
+      [
+        308,
+        41,
+        228
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.2959770114942529,
+        "recall": 0.48699763593380613,
+        "f1": 0.3681858802502234,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.35,
+        "recall": 0.06965174129353234,
+        "f1": 0.11618257261410789,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.36421725239616615,
+        "recall": 0.3951473136915078,
+        "f1": 0.3790523690773067,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.16344164319024654,
+    "weighted_f1": 0.1523413211189631,
+    "accuracy": 0.31180555555555556,
+    "confusion_matrix": [
+      [
+        445,
+        0,
+        0
+      ],
+      [
+        462,
+        0,
+        9
+      ],
+      [
+        520,
+        0,
+        4
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3118430273300631,
+        "recall": 1.0,
+        "f1": 0.4754273504273504,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.3076923076923077,
+        "recall": 0.007633587786259542,
+        "f1": 0.0148975791433892,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.32536246579259803,
+    "weighted_f1": 0.3306035465760105,
+    "accuracy": 0.3623853211009174,
+    "confusion_matrix": [
+      [
+        141,
+        54,
+        3
+      ],
+      [
+        234,
+        77,
+        9
+      ],
+      [
+        61,
+        56,
+        19
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.32339449541284404,
+        "recall": 0.7121212121212122,
+        "f1": 0.444794952681388,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.4117647058823529,
+        "recall": 0.240625,
+        "f1": 0.3037475345167653,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.6129032258064516,
+        "recall": 0.13970588235294118,
+        "f1": 0.2275449101796407,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.3398131434046124,
+    "weighted_f1": 0.32412135908934,
+    "accuracy": 0.3516405135520685,
+    "confusion_matrix": [
+      [
+        182,
+        176,
+        65
+      ],
+      [
+        119,
+        231,
+        52
+      ],
+      [
+        183,
+        314,
+        80
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3760330578512397,
+        "recall": 0.4302600472813239,
+        "f1": 0.4013230429988975,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.32038834951456313,
+        "recall": 0.5746268656716418,
+        "f1": 0.41139804096170973,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.40609137055837563,
+        "recall": 0.1386481802426343,
+        "f1": 0.20671834625322996,
+        "support": 577.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.1787205481804063,
+    "weighted_f1": 0.16886919580956247,
+    "accuracy": 0.3194444444444444,
+    "confusion_matrix": [
+      [
+        444,
+        0,
+        1
+      ],
+      [
+        460,
+        0,
+        11
+      ],
+      [
+        508,
+        0,
+        16
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.31444759206798867,
+        "recall": 0.9977528089887641,
+        "f1": 0.4781906300484653,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.5714285714285714,
+        "recall": 0.030534351145038167,
+        "f1": 0.057971014492753624,
+        "support": 524.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.2711015222342083,
+    "weighted_f1": 0.3007093789552743,
+    "accuracy": 0.3409785932721712,
+    "confusion_matrix": [
+      [
+        130,
+        65,
+        3
+      ],
+      [
+        226,
+        88,
+        6
+      ],
+      [
+        64,
+        67,
+        5
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.30952380952380953,
+        "recall": 0.6565656565656566,
+        "f1": 0.42071197411003236,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.4,
+        "recall": 0.275,
+        "f1": 0.32592592592592595,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.35714285714285715,
+        "recall": 0.03676470588235294,
+        "f1": 0.06666666666666667,
+        "support": 136.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.30815956068180994,
+    "weighted_f1": 0.32202761921415907,
+    "accuracy": 0.333095577746077,
+    "confusion_matrix": [
+      [
+        96,
+        120,
+        207
+      ],
+      [
+        44,
+        87,
+        271
+      ],
+      [
+        156,
+        137,
+        284
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.32432432432432434,
+        "recall": 0.22695035460992907,
+        "f1": 0.2670375521557719,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.25290697674418605,
+        "recall": 0.21641791044776118,
+        "f1": 0.23324396782841822,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.37270341207349084,
+        "recall": 0.49220103986135183,
+        "f1": 0.42419716206123975,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.24161916975315878,
+    "weighted_f1": 0.23142582978402315,
+    "accuracy": 0.325,
+    "confusion_matrix": [
+      [
+        395,
+        4,
+        46
+      ],
+      [
+        346,
+        46,
+        79
+      ],
+      [
+        472,
+        25,
+        27
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.325638911788953,
+        "recall": 0.8876404494382022,
+        "f1": 0.4764776839565742,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.6133333333333333,
+        "recall": 0.09766454352441614,
+        "f1": 0.1684981684981685,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.17763157894736842,
+        "recall": 0.05152671755725191,
+        "f1": 0.07988165680473373,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.18865375336044668,
+    "weighted_f1": 0.18811410035311435,
+    "accuracy": 0.3211009174311927,
+    "confusion_matrix": [
+      [
+        194,
+        4,
+        0
+      ],
+      [
+        303,
+        16,
+        1
+      ],
+      [
+        120,
+        16,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.31442463533225284,
+        "recall": 0.9797979797979798,
+        "f1": 0.47607361963190187,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.4444444444444444,
+        "recall": 0.05,
+        "f1": 0.0898876404494382,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.33002299100873245,
+    "weighted_f1": 0.32553039562726915,
+    "accuracy": 0.33238231098430815,
+    "confusion_matrix": [
+      [
+        197,
+        159,
+        67
+      ],
+      [
+        127,
+        138,
+        137
+      ],
+      [
+        273,
+        173,
+        131
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.32998324958123953,
+        "recall": 0.4657210401891253,
+        "f1": 0.3862745098039216,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.2936170212765957,
+        "recall": 0.34328358208955223,
+        "f1": 0.3165137614678899,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.39104477611940297,
+        "recall": 0.2270363951473137,
+        "f1": 0.28728070175438597,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.2390554139090966,
+    "weighted_f1": 0.22951528207587985,
+    "accuracy": 0.3013888888888889,
+    "confusion_matrix": [
+      [
+        345,
+        55,
+        45
+      ],
+      [
+        317,
+        60,
+        94
+      ],
+      [
+        423,
+        72,
+        29
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.31797235023041476,
+        "recall": 0.7752808988764045,
+        "f1": 0.45098039215686275,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.32085561497326204,
+        "recall": 0.12738853503184713,
+        "f1": 0.182370820668693,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.17261904761904762,
+        "recall": 0.05534351145038168,
+        "f1": 0.0838150289017341,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "CapMVRVCur",
+      "MVRV_Z",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "CapMVRVCur_roc_7d",
+      "CapMVRVCur_roc_30d",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.1732506622420167,
+    "weighted_f1": 0.16703275784575522,
+    "accuracy": 0.308868501529052,
+    "confusion_matrix": [
+      [
+        193,
+        5,
+        0
+      ],
+      [
+        311,
+        9,
+        0
+      ],
+      [
+        123,
+        13,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3078149920255183,
+        "recall": 0.9747474747474747,
+        "f1": 0.4678787878787879,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.3333333333333333,
+        "recall": 0.028125,
+        "f1": 0.05187319884726225,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.14855875831485588,
+    "weighted_f1": 0.12779020151762924,
+    "accuracy": 0.2867332382310984,
+    "confusion_matrix": [
+      [
+        0,
+        423,
+        0
+      ],
+      [
+        0,
+        402,
+        0
+      ],
+      [
+        0,
+        577,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.2867332382310984,
+        "recall": 1.0,
+        "f1": 0.44567627494456763,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.1778682959945689,
+    "weighted_f1": 0.19417288979407107,
+    "accuracy": 0.3638888888888889,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        445
+      ],
+      [
+        0,
+        0,
+        471
+      ],
+      [
+        0,
+        0,
+        524
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.3638888888888889,
+        "recall": 1.0,
+        "f1": 0.5336048879837068,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "Majority",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.11476793248945148,
+    "weighted_f1": 0.07159834320442844,
+    "accuracy": 0.20795107033639143,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        198
+      ],
+      [
+        0,
+        0,
+        320
+      ],
+      [
+        0,
+        0,
+        136
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.20795107033639143,
+        "recall": 1.0,
+        "f1": 0.34430379746835443,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.27604573174678193,
+    "weighted_f1": 0.29050308191687885,
+    "accuracy": 0.33166904422253923,
+    "confusion_matrix": [
+      [
+        224,
+        0,
+        199
+      ],
+      [
+        198,
+        15,
+        189
+      ],
+      [
+        337,
+        14,
+        226
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.2951251646903821,
+        "recall": 0.5295508274231678,
+        "f1": 0.3790186125211506,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.5172413793103449,
+        "recall": 0.03731343283582089,
+        "f1": 0.06960556844547564,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.36807817589576547,
+        "recall": 0.39168110918544197,
+        "f1": 0.3795130142737196,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.17562999893096978,
+    "weighted_f1": 0.16539371491232333,
+    "accuracy": 0.31805555555555554,
+    "confusion_matrix": [
+      [
+        445,
+        0,
+        0
+      ],
+      [
+        453,
+        0,
+        18
+      ],
+      [
+        511,
+        0,
+        13
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3158268275372605,
+        "recall": 1.0,
+        "f1": 0.48004314994606256,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.41935483870967744,
+        "recall": 0.02480916030534351,
+        "f1": 0.04684684684684685,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "Ridge",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.27882510664229126,
+    "weighted_f1": 0.3308472681124175,
+    "accuracy": 0.3746177370030581,
+    "confusion_matrix": [
+      [
+        115,
+        83,
+        0
+      ],
+      [
+        190,
+        130,
+        0
+      ],
+      [
+        44,
+        92,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.32951289398280803,
+        "recall": 0.5808080808080808,
+        "f1": 0.42047531992687387,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.4262295081967213,
+        "recall": 0.40625,
+        "f1": 0.416,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.3189348836409363,
+    "weighted_f1": 0.2869202441240092,
+    "accuracy": 0.37089871611982883,
+    "confusion_matrix": [
+      [
+        297,
+        119,
+        7
+      ],
+      [
+        184,
+        211,
+        7
+      ],
+      [
+        266,
+        299,
+        12
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.39759036144578314,
+        "recall": 0.7021276595744681,
+        "f1": 0.5076923076923077,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.3354531001589825,
+        "recall": 0.5248756218905473,
+        "f1": 0.4093113482056256,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.46153846153846156,
+        "recall": 0.02079722703639515,
+        "f1": 0.03980099502487562,
+        "support": 577.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.19449897748580172,
+    "weighted_f1": 0.18581234663729698,
+    "accuracy": 0.32708333333333334,
+    "confusion_matrix": [
+      [
+        442,
+        0,
+        3
+      ],
+      [
+        448,
+        0,
+        23
+      ],
+      [
+        494,
+        1,
+        29
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.319364161849711,
+        "recall": 0.9932584269662922,
+        "f1": 0.4833242208857299,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.5272727272727272,
+        "recall": 0.05534351145038168,
+        "f1": 0.1001727115716753,
+        "support": 524.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "LinearSVM",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.2912668757534377,
+    "weighted_f1": 0.35523773558687405,
+    "accuracy": 0.39908256880733944,
+    "confusion_matrix": [
+      [
+        94,
+        104,
+        0
+      ],
+      [
+        153,
+        167,
+        0
+      ],
+      [
+        40,
+        96,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.32752613240418116,
+        "recall": 0.47474747474747475,
+        "f1": 0.38762886597938145,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.4550408719346049,
+        "recall": 0.521875,
+        "f1": 0.4861717612809316,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    },
+    "best_C": 0.01
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.3099222097176255,
+    "weighted_f1": 0.3242277116251647,
+    "accuracy": 0.33808844507845937,
+    "confusion_matrix": [
+      [
+        127,
+        88,
+        208
+      ],
+      [
+        64,
+        62,
+        276
+      ],
+      [
+        183,
+        109,
+        285
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.339572192513369,
+        "recall": 0.30023640661938533,
+        "f1": 0.3186951066499373,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.23938223938223938,
+        "recall": 0.15422885572139303,
+        "f1": 0.1875945537065053,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.3706111833550065,
+        "recall": 0.49393414211438474,
+        "f1": 0.4234769687964339,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.22726523268055807,
+    "weighted_f1": 0.220320246726163,
+    "accuracy": 0.2986111111111111,
+    "confusion_matrix": [
+      [
+        349,
+        8,
+        88
+      ],
+      [
+        339,
+        26,
+        106
+      ],
+      [
+        458,
+        11,
+        55
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3045375218150087,
+        "recall": 0.7842696629213484,
+        "f1": 0.43871778755499685,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.5777777777777777,
+        "recall": 0.055201698513800426,
+        "f1": 0.10077519379844961,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.22088353413654618,
+        "recall": 0.1049618320610687,
+        "f1": 0.1423027166882277,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "RandomForest",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.29822091361226977,
+    "weighted_f1": 0.3535492918502835,
+    "accuracy": 0.40061162079510704,
+    "confusion_matrix": [
+      [
+        137,
+        61,
+        0
+      ],
+      [
+        194,
+        125,
+        1
+      ],
+      [
+        78,
+        58,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.33496332518337407,
+        "recall": 0.6919191919191919,
+        "f1": 0.4514003294892916,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.5122950819672131,
+        "recall": 0.390625,
+        "f1": 0.4432624113475177,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    }
+  },
+  {
+    "fold": "train_c1_test_c2",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 522,
+    "n_test": 1402,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 128,
+      "1": 209,
+      "2": 185
+    },
+    "test_class_dist": {
+      "0": 423,
+      "1": 402,
+      "2": 577
+    },
+    "skipped": false,
+    "macro_f1": 0.3019214011264196,
+    "weighted_f1": 0.29880526442197375,
+    "accuracy": 0.3231098430813124,
+    "confusion_matrix": [
+      [
+        258,
+        69,
+        96
+      ],
+      [
+        158,
+        67,
+        177
+      ],
+      [
+        365,
+        84,
+        128
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.33034571062740076,
+        "recall": 0.6099290780141844,
+        "f1": 0.42857142857142855,
+        "support": 423.0
+      },
+      "1": {
+        "precision": 0.30454545454545456,
+        "recall": 0.16666666666666666,
+        "f1": 0.21543408360128619,
+        "support": 402.0
+      },
+      "2": {
+        "precision": 0.3192019950124688,
+        "recall": 0.2218370883882149,
+        "f1": 0.261758691206544,
+        "support": 577.0
+      }
+    }
+  },
+  {
+    "fold": "train_c12_test_c3",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 1593,
+    "n_test": 1440,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 454,
+      "1": 502,
+      "2": 637
+    },
+    "test_class_dist": {
+      "0": 445,
+      "1": 471,
+      "2": 524
+    },
+    "skipped": false,
+    "macro_f1": 0.23731541201115555,
+    "weighted_f1": 0.2321667936099392,
+    "accuracy": 0.28125,
+    "confusion_matrix": [
+      [
+        291,
+        14,
+        140
+      ],
+      [
+        315,
+        39,
+        117
+      ],
+      [
+        419,
+        30,
+        75
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.2839024390243902,
+        "recall": 0.6539325842696629,
+        "f1": 0.39591836734693875,
+        "support": 445.0
+      },
+      "1": {
+        "precision": 0.46987951807228917,
+        "recall": 0.08280254777070063,
+        "f1": 0.1407942238267148,
+        "support": 471.0
+      },
+      "2": {
+        "precision": 0.22590361445783133,
+        "recall": 0.1431297709923664,
+        "f1": 0.17523364485981308,
+        "support": 524.0
+      }
+    }
+  },
+  {
+    "fold": "train_c123_test_c4",
+    "label": "regime_price",
+    "model": "XGBoost",
+    "n_train": 3033,
+    "n_test": 654,
+    "features_used": [
+      "SMA_30",
+      "Price_SMA_Ratio",
+      "RSI_14",
+      "MACD",
+      "MACD_Signal",
+      "MACD_Hist",
+      "Volatility_30d",
+      "Returns",
+      "AdrActCnt",
+      "HashRate",
+      "TxCnt",
+      "Puell_Multiple",
+      "NVT_proxy",
+      "NetFlowExUSD",
+      "NetFlowExUSD_7d",
+      "ExchangeSupplyRatio",
+      "AdrActCnt_roc_7d",
+      "AdrActCnt_roc_30d",
+      "HashRate_roc_7d",
+      "HashRate_roc_30d",
+      "AdrActCnt_log",
+      "HashRate_log",
+      "TxCnt_log"
+    ],
+    "train_class_dist": {
+      "0": 899,
+      "1": 973,
+      "2": 1161
+    },
+    "test_class_dist": {
+      "0": 198,
+      "1": 320,
+      "2": 136
+    },
+    "skipped": false,
+    "macro_f1": 0.2223351723670551,
+    "weighted_f1": 0.24431500678138918,
+    "accuracy": 0.3211009174311927,
+    "confusion_matrix": [
+      [
+        159,
+        39,
+        0
+      ],
+      [
+        269,
+        51,
+        0
+      ],
+      [
+        97,
+        39,
+        0
+      ]
+    ],
+    "per_class": {
+      "0": {
+        "precision": 0.3028571428571429,
+        "recall": 0.803030303030303,
+        "f1": 0.43983402489626555,
+        "support": 198.0
+      },
+      "1": {
+        "precision": 0.3953488372093023,
+        "recall": 0.159375,
+        "f1": 0.22717149220489977,
+        "support": 320.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 136.0
+      }
+    }
+  }
+]

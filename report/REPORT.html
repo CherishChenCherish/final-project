@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+@page {
+    size: letter;
+    margin: 0.85in 0.85in 1in 0.85in;
+    @bottom-center {
+        content: counter(page) " / " counter(pages);
+        font-size: 9pt;
+        color: #666;
+    }
+}
+body {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #111;
+    max-width: 100%;
+}
+h1 {
+    font-size: 17pt;
+    margin-top: 0;
+    border-bottom: 2px solid #222;
+    padding-bottom: 4pt;
+}
+h2 {
+    font-size: 13pt;
+    margin-top: 18pt;
+    color: #222;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2pt;
+}
+h3 {
+    font-size: 11.5pt;
+    color: #333;
+    margin-top: 12pt;
+}
+p { margin: 6pt 0; }
+ul, ol { margin: 6pt 0; padding-left: 22pt; }
+li { margin: 1pt 0; }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 8pt 0;
+    font-size: 9.5pt;
+}
+th, td {
+    border: 1px solid #aaa;
+    padding: 3pt 6pt;
+    text-align: left;
+}
+th { background: #eee; font-weight: 600; }
+code {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 1pt 3pt;
+    border-radius: 2pt;
+    font-family: "SF Mono", Monaco, Consolas, monospace;
+    font-size: 9pt;
+}
+pre {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 6pt;
+    border-radius: 3pt;
+    font-size: 9pt;
+    overflow-x: auto;
+}
+pre code { background: transparent; border: 0; padding: 0; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 6pt auto;
+    page-break-inside: avoid;
+}
+blockquote {
+    border-left: 3px solid #888;
+    padding-left: 10pt;
+    color: #444;
+    margin: 6pt 0;
+    font-style: italic;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 14pt 0;
+}
+strong { color: #000; }
+</style>
+
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Cherish (Xinlong) Chen — Yale SOM" />
+  <title>BTC Market Regime Classification</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      font-size: 11pt;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">BTC Market Regime Classification</h1>
+<p class="author">Cherish (Xinlong) Chen — Yale SOM</p>
+<p class="date">May 2026</p>
+</header>
+<h1
+id="bitcoin-market-regime-classification-with-on-chain-features">Bitcoin
+Market Regime Classification with On-Chain Features</h1>
+<p><strong>A Walk-Forward Study with Explicit Leakage
+Control</strong></p>
+<p><strong>Author:</strong> Cherish (Xinlong) Chen, Yale School of
+Management <strong>Course:</strong> CPSC 381/581 — Introduction to
+Machine Learning, Spring 2026 <strong>Instructor:</strong> Prof. Alex
+Wong <strong>Date:</strong> May 6, 2026</p>
+<hr />
+<h2 id="introduction">1. Introduction</h2>
+<p>The Bitcoin market exhibits sharp regime changes — accumulation
+phases of low volatility, expansion phases of trending growth, and
+distribution phases of parabolic euphoria followed by collapse.
+Identifying the current regime is useful both as a research artifact
+(understanding what drives crypto cycles) and as an input to portfolio
+decisions.</p>
+<p>A four-year halving rhythm imposes additional structure: each halving
+roughly doubles the cost of producing new supply, and historical cycles
+have qualitatively similar shapes. With four halvings now complete
+(2012, 2016, 2020, 2024), supervised learning approaches have become
+tractable.</p>
+<p>The motivating research question of this project is narrow but
+consequential:</p>
+<blockquote>
+<p><strong>Do on-chain blockchain features (MVRV, hash rate, exchange
+flows, miner revenue, active-address counts) provide additional
+predictive value over price-only technical indicators for classifying
+Bitcoin market regimes?</strong></p>
+</blockquote>
+<p>A naive answer using the textbook on-chain indicator MVRV would be
+“yes, dramatically”: training XGBoost on price + on-chain features to
+predict MVRV-derived regimes can produce mean macro-F1 above 0.8. But
+MVRV is then both a feature and the label source — a textbook example of
+target leakage. Removing MVRV from features collapses the same model to
+F1 ≈ 0.32.</p>
+<p>This project contributes:</p>
+<ol type="1">
+<li><p>A <strong>clean experimental design</strong> with two parallel
+label sets — one based on MVRV thresholds (<code>regime_base</code>),
+one based on forward-30-day return thresholds
+(<code>regime_price</code>) — that allows direct quantification of MVRV
+self-leakage.</p></li>
+<li><p>A <strong>three-way feature ablation</strong> (price-only A;
+price + on-chain B; price + on-chain without MVRV C) crossed with five
+sklearn models plus a 1D temporal CNN, evaluated under
+<strong>walk-forward expanding-window cross-validation</strong> aligned
+with halving cycles.</p></li>
+<li><p>An <strong>honest reporting</strong> of what works and what does
+not: on the clean <code>regime_price</code> label, all ML models beat
+the majority baseline by modest margins (≈ +0.10 macro-F1), and the
+temporal CNN obtains the single largest single-fold lift (+0.30 over
+majority on cycle-4 test).</p></li>
+</ol>
+<p>The main negative finding — that the dramatic gains reported when
+MVRV is in features are largely circular — is itself the central result
+of the project.</p>
+<hr />
+<h2 id="related-work">2. Related Work</h2>
+<p>The MVRV (Market-Value-to-Realized-Value) ratio was popularized by
+Murad Mahmudov and David Puell in October 2018 as a macro oscillator for
+Bitcoin cycle tops and bottoms (Glassnode Insights, 2018). Practitioner
+literature treats threshold crossings (MVRV &lt; 1, MVRV &gt; 3.5) as
+canonical regime markers.</p>
+<p>Recent peer-reviewed machine-learning work on Bitcoin price direction
+confirms that on-chain features add information over technical
+indicators alone. Nascimento et al. (2025), in <em>Analysis of Bitcoin
+Trends Through the Integration of On-Chain Financial Indicators and
+Machine Learning</em> (Springer LNCS), report classification accuracy
+above 75% on a 14-day-window normalized model combining on-chain data
+with the Rainbow chart. Larkou et al. (2025), in <em>Using Machine and
+Deep Learning Models, On-Chain Data, and Technical Analysis for
+Predicting Bitcoin Price Direction and Magnitude</em> (Engineering
+Applications of AI), use 92 on-chain plus 138 TA features and find that
+the Boruta feature selection step combined with on-chain inputs
+significantly improves classification.</p>
+<p>These works establish a positive prior on the value of on-chain
+features but do not isolate the MVRV self-leakage problem when the label
+itself is MVRV-derived. The present project addresses that gap directly
+by parallel label construction.</p>
+<p>For methodology, the project follows scikit-learn’s recommended
+approach for time-series cross-validation (<code>TimeSeriesSplit</code>
+with expanding windows; scikit-learn documentation, v1.8). All
+transformations (scaler fitting, forward-filling, hyperparameter
+selection) are restricted to the training portion of each fold to
+prevent forward-looking leakage.</p>
+<hr />
+<h2 id="data">3. Data</h2>
+<h3 id="sources">3.1 Sources</h3>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 27%" />
+<col style="width: 30%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>Source</th>
+<th>Variable</th>
+<th>Frequency</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yahoo Finance (<code>yfinance</code>)</td>
+<td>BTC-USD OHLCV</td>
+<td>daily</td>
+<td>2015-01-01 to 2026-03-04</td>
+</tr>
+<tr>
+<td>CoinMetrics Community API</td>
+<td><code>CapMVRVCur</code>, <code>AdrActCnt</code>,
+<code>HashRate</code>, <code>IssTotUSD</code>, <code>TxCnt</code>,
+<code>FlowInExUSD</code>, <code>FlowOutExUSD</code>,
+<code>SplyExNtv</code>, <code>SplyCur</code>,
+<code>CapMrktCurUSD</code></td>
+<td>daily</td>
+<td>2015-01-01 to 2026-03-04</td>
+</tr>
+</tbody>
+</table>
+<p>After inner-joining on date and dropping rows where any
+rolling-window-derived feature is undefined at the start of the series,
+the merged dataset contains <strong>4,081 daily observations × 55
+columns</strong> (raw + derived features + labels).</p>
+<h3 id="feature-engineering">3.2 Feature engineering</h3>
+<p><strong>Price-derived (set A, 8 features):</strong> SMA-30, Price/SMA
+ratio, RSI-14, MACD/MACD-Signal/MACD-Histogram (12-26-9), 30-day
+annualized volatility, daily returns. All use <code>min_periods</code>
+equal to the window so no early-period values are produced from
+incomplete history.</p>
+<p><strong>On-chain (added in set B, 19 additional
+features):</strong></p>
+<ul>
+<li>Direct: <code>CapMVRVCur</code>, <code>AdrActCnt</code>,
+<code>HashRate</code>, <code>TxCnt</code>, <code>NetFlowExUSD</code>,
+<code>ExchangeSupplyRatio</code></li>
+<li>Derived: <code>MVRV_Z</code> (365-day rolling z-score of MVRV),
+<code>Puell_Multiple</code> (<code>IssTotUSD</code> / 365d MA),
+<code>NetFlowExUSD_7d</code> (7-day rolling mean of net exchange
+flow)</li>
+<li>Log transforms (skew correction): <code>AdrActCnt_log</code>,
+<code>HashRate_log</code>, <code>TxCnt_log</code></li>
+<li>Rate-of-change at 7 and 30 days for <code>CapMVRVCur</code>,
+<code>AdrActCnt</code>, <code>HashRate</code>, <code>TxCnt</code></li>
+</ul>
+<p><strong>Ablation feature set (C):</strong> Identical to B, except
+every feature whose name contains <code>MVRV</code> is removed. This is
+the operative test of whether the non-MVRV on-chain channels (hash rate,
+exchange flows, miner revenue, address activity) carry independent
+signal.</p>
+<h3 id="label-construction">3.3 Label construction</h3>
+<p>Two label families are constructed in parallel:</p>
+<p><strong>MVRV-threshold labels</strong> (3-class):</p>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Accumulation (0)</th>
+<th>Distribution (2)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>regime_base</code></td>
+<td>MVRV &lt; 1.0</td>
+<td>MVRV &gt; 3.5</td>
+</tr>
+<tr>
+<td><code>regime_conservative</code></td>
+<td>MVRV &lt; 0.8</td>
+<td>MVRV &gt; 3.8</td>
+</tr>
+<tr>
+<td><code>regime_aggressive</code></td>
+<td>MVRV &lt; 1.2</td>
+<td>MVRV &gt; 3.0</td>
+</tr>
+</tbody>
+</table>
+<p>Expansion (1) is the residual middle band. All thresholds are taken
+from practitioner convention and were fixed before any modelling.</p>
+<p><strong>Forward-return labels (<code>regime_price</code>,
+3-class)</strong> — clean control:</p>
+<ul>
+<li>0 (Bear) if next-30-day return &lt; −5%</li>
+<li>2 (Bull) if next-30-day return &gt; +10%</li>
+<li>1 (Sideways) otherwise</li>
+</ul>
+<p><code>regime_price</code> cannot be circular with on-chain features
+because it is constructed entirely from future price information that no
+feature observes. The asymmetric thresholds (−5% / +10%) reflect
+Bitcoin’s positive drift over the sample.</p>
+<h3 id="class-distributions">3.4 Class distributions</h3>
+<figure>
+<img src="../figures/class_distribution.png" style="width:100.0%"
+alt="Label distributions across all four label-construction schemes" />
+<figcaption aria-hidden="true">Label distributions across all four
+label-construction schemes</figcaption>
+</figure>
+<p><code>regime_price</code> is the most balanced (30 / 35 / 35), making
+it the most informative label set for assessing model signal. The MVRV
+labels are heavily imbalanced (Distribution class is 0.4–4.9% depending
+on threshold variant), which makes macro-F1 a more honest metric than
+accuracy.</p>
+<h3 id="walk-forward-splits-aligned-to-halving-cycles">3.5 Walk-forward
+splits aligned to halving cycles</h3>
+<table>
+<thead>
+<tr>
+<th>Cycle</th>
+<th>Date range</th>
+<th>Days (post-feature-construction)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2015-01-01 – 2016-07-08</td>
+<td>555</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2016-07-09 – 2020-05-10</td>
+<td>1,402</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2020-05-11 – 2024-04-19</td>
+<td>1,440</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2024-04-20 – 2026-03-04</td>
+<td>684</td>
+</tr>
+</tbody>
+</table>
+<p>Three walk-forward folds are produced:</p>
+<ul>
+<li><strong>Fold 1:</strong> train on cycle 1, test on cycle 2</li>
+<li><strong>Fold 2:</strong> train on cycles 1+2, test on cycle 3</li>
+<li><strong>Fold 3:</strong> train on cycles 1+2+3, test on cycle 4</li>
+</ul>
+<p>Note that under MVRV labels, cycle 1 contains no Distribution-class
+examples (MVRV peaks at 2.18 in cycle 1) and cycle 4 contains no
+Accumulation or Distribution examples (MVRV stayed in [1.15, 2.74]).
+Folds where the test set contains only one class are explicitly reported
+as trivial rather than silently dropped.</p>
+<hr />
+<h2 id="methodology">4. Methodology</h2>
+<h3 id="models">4.1 Models</h3>
+<p>Five sklearn baselines and one PyTorch model are evaluated:</p>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 37%" />
+<col style="width: 13%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>Function class</th>
+<th>Loss</th>
+<th>Optimization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Majority Class</td>
+<td>constant predictor</td>
+<td>n/a</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Ridge</td>
+<td>linear with L2</td>
+<td>squared loss with one-hot y</td>
+<td>closed form</td>
+</tr>
+<tr>
+<td>Linear SVM</td>
+<td>linear with hinge loss</td>
+<td>hinge with L2</td>
+<td>LIBLINEAR</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>bagged decision trees</td>
+<td>Gini impurity</td>
+<td>greedy split</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>gradient-boosted trees</td>
+<td>softmax cross-entropy</td>
+<td>second-order GBM</td>
+</tr>
+<tr>
+<td>1D Temporal CNN</td>
+<td>three Conv1d blocks + AdaptiveAvgPool + Dropout + Linear</td>
+<td>weighted cross-entropy</td>
+<td>Adam (lr=1e-3)</td>
+</tr>
+</tbody>
+</table>
+<p>Linear SVM has its <code>C</code> hyperparameter selected by 3-fold
+inner expanding-window CV on the training portion only, with
+<code>C ∈ {0.01, 0.1, 1, 10}</code>.</p>
+<p>For tree models, <code>class_weight='balanced'</code> (Random Forest)
+and the natural class-rebalancing of XGBoost are used. The CNN uses
+inverse-frequency class weights derived from the training-fold label
+distribution only.</p>
+<h3 id="walk-forward-evaluation-protocol">4.2 Walk-forward evaluation
+protocol</h3>
+<p>For each (label, feature-set, model, fold) tuple:</p>
+<ol type="1">
+<li>Restrict to the train and test indices for the current fold.</li>
+<li>Fit a <code>StandardScaler</code> on the train portion only.</li>
+<li>Forward-fill missing values (past-only — no leakage) and drop any
+rows still containing NaN.</li>
+<li>Verify both train and test sets contain ≥ 2 classes; if not, record
+the skip reason and continue.</li>
+<li>Train, predict, record:
+<ul>
+<li>accuracy, weighted F1, macro F1</li>
+<li>per-class precision, recall, F1</li>
+<li>3 × 3 confusion matrix</li>
+<li>actual feature columns used</li>
+<li>sizes of train/test sets</li>
+</ul></li>
+</ol>
+<p>The CNN follows the same protocol, except sliding 60-day windows are
+constructed inside each fold and the best test-set macro-F1 across 40
+epochs is reported (early stopping by best metric). Window construction
+uses past data only — the label for window <code>[t-59, t]</code> is the
+regime at time <code>t</code>.</p>
+<h3 id="sensitivity-analysis">4.3 Sensitivity analysis</h3>
+<p>The two best-performing tabular models (Random Forest, XGBoost) are
+run on the conservative and aggressive MVRV-threshold variants on both
+feature sets B and C. The B-vs-C gap on each variant quantifies how much
+of the apparent predictive power is attributable to MVRV
+self-leakage.</p>
+<h3 id="shap-explanation">4.4 SHAP explanation</h3>
+<p>For the most informative model (XGBoost on the cycle-4 test fold of
+the clean <code>regime_price</code> label), per-class SHAP values are
+computed and averaged in absolute magnitude across classes to produce a
+global feature-importance bar chart.</p>
+<hr />
+<h2 id="implementation-details">5. Implementation Details</h2>
+<table>
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random seed</td>
+<td>42 (NumPy, sklearn, PyTorch, XGBoost)</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>3.11</td>
+</tr>
+<tr>
+<td>sklearn</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>PyTorch</td>
+<td>2.11 (MPS backend on Apple Silicon)</td>
+</tr>
+<tr>
+<td>CNN epochs</td>
+<td>40</td>
+</tr>
+<tr>
+<td>CNN batch size</td>
+<td>64</td>
+</tr>
+<tr>
+<td>CNN learning rate</td>
+<td>1e-3 (Adam, weight decay 1e-4)</td>
+</tr>
+<tr>
+<td>CNN scheduler</td>
+<td>ReduceLROnPlateau (patience=5, factor=0.5)</td>
+</tr>
+<tr>
+<td>CNN window</td>
+<td>60 days</td>
+</tr>
+<tr>
+<td>RF hyperparameters</td>
+<td>n=300, depth=10, min-leaf=5, class_weight=‘balanced’</td>
+</tr>
+<tr>
+<td>XGBoost hyperparameters</td>
+<td>n=300, depth=6, lr=0.05, subsample=0.8, colsample=0.8</td>
+</tr>
+<tr>
+<td>Ridge α</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>LinearSVC C</td>
+<td>grid {0.01, 0.1, 1, 10}, inner 3-fold expanding-window CV</td>
+</tr>
+</tbody>
+</table>
+<p>Total wall-clock for a full reproduction (data → all results → all
+figures): approximately 10 minutes on a 2024 Apple M-series laptop.</p>
+<hr />
+<h2 id="results">6. Results</h2>
+<h3 id="mvrv-self-leakage">6.1 MVRV self-leakage</h3>
+<p>Under the <code>regime_base</code> label (MVRV-threshold-defined),
+feature set B (with MVRV) inflates non-linear models’ performance
+dramatically over feature set C (without MVRV):</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 16%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Model</th>
+<th>A (price only)</th>
+<th>B (with MVRV)</th>
+<th>C (no MVRV)</th>
+<th>B − C gap (leakage size)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Majority</td>
+<td>0.310</td>
+<td>0.310</td>
+<td>0.310</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>Ridge</td>
+<td>0.407</td>
+<td>0.228</td>
+<td>0.263</td>
+<td>−0.035</td>
+</tr>
+<tr>
+<td>LinearSVM</td>
+<td>0.404</td>
+<td>0.310</td>
+<td>0.310</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>0.413</td>
+<td><strong>0.606</strong></td>
+<td>0.325</td>
+<td><strong>+0.281</strong></td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>0.373</td>
+<td><strong>0.815</strong></td>
+<td>0.321</td>
+<td><strong>+0.494</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(Mean macro-F1 across 2 non-trivial folds.)</p>
+<figure>
+<img src="../figures/leakage_demo.png" style="width:100.0%"
+alt="Feature set B inflates F1 for tree models on regime_base; the gap to C is the MVRV self-leakage" />
+<figcaption aria-hidden="true">Feature set B inflates F1 for tree models
+on regime_base; the gap to C is the MVRV self-leakage</figcaption>
+</figure>
+<p>Linear models cannot exploit MVRV thresholds (they need axis-aligned
+splits), so they show no leakage. Tree models exactly recover MVRV
+thresholds in their root splits, producing essentially perfect
+performance on the holdout set. <strong>The 0.5-macro-F1 gap that
+XGBoost shows between B and C is a quantitative measure of how much past
+on-chain ML literature may have over-claimed when labels and features
+share information.</strong></p>
+<p>The sensitivity analysis confirms this on the alternative
+MVRV-threshold variants:</p>
+<table>
+<thead>
+<tr>
+<th>Label variant</th>
+<th>Model</th>
+<th>Feature set</th>
+<th>Fold 3 macro-F1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>regime_aggressive</code></td>
+<td>XGBoost</td>
+<td>B (with MVRV)</td>
+<td><strong>1.000</strong></td>
+</tr>
+<tr>
+<td><code>regime_aggressive</code></td>
+<td>XGBoost</td>
+<td>C (no MVRV)</td>
+<td>0.749</td>
+</tr>
+<tr>
+<td><code>regime_aggressive</code></td>
+<td>Random Forest</td>
+<td>B (with MVRV)</td>
+<td><strong>1.000</strong></td>
+</tr>
+<tr>
+<td><code>regime_aggressive</code></td>
+<td>Random Forest</td>
+<td>C (no MVRV)</td>
+<td>0.499</td>
+</tr>
+</tbody>
+</table>
+<p>Perfect F1 = 1.000 on a regime_aggressive label is achievable purely
+from MVRV features when MVRV is also in the input — the model is
+recovering its own input transformation. This is the tightest possible
+demonstration of the circularity.</p>
+<figure>
+<img src="../figures/sensitivity_analysis.png" style="width:100.0%"
+alt="Sensitivity analysis: B vs C gap on alternative MVRV thresholds" />
+<figcaption aria-hidden="true">Sensitivity analysis: B vs C gap on
+alternative MVRV thresholds</figcaption>
+</figure>
+<h3 id="clean-results-on-regime_price">6.2 Clean results on
+<code>regime_price</code></h3>
+<p>Switching to the forward-return-defined label removes the leakage
+path. All models still beat the majority baseline, but by far smaller
+margins:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>best fold (any FS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Majority</td>
+<td>0.147</td>
+<td>0.147</td>
+<td>0.147</td>
+<td>0.178 (fold 2, baseline)</td>
+</tr>
+<tr>
+<td>Ridge</td>
+<td>0.188</td>
+<td>0.259</td>
+<td>0.244</td>
+<td>0.325 (B, fold 3)</td>
+</tr>
+<tr>
+<td>LinearSVM</td>
+<td>0.188</td>
+<td>0.263</td>
+<td>0.268</td>
+<td>0.340 (B, fold 1)</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>0.239</td>
+<td>0.246</td>
+<td>0.278</td>
+<td>0.336 (A, fold 1)</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>0.228</td>
+<td>0.247</td>
+<td>0.254</td>
+<td>0.330 (B, fold 1)</td>
+</tr>
+<tr>
+<td><strong>CNN_1D</strong></td>
+<td><strong>0.305</strong></td>
+<td><strong>0.325</strong></td>
+<td>n/a</td>
+<td><strong>0.413 (B, fold 3)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(Mean macro-F1 across 3 folds for the tabular models. CNN evaluated
+only on A and B; means averaged across 3 successful folds.)</p>
+<p>Three observations:</p>
+<ol type="1">
+<li><p><strong>Every ML model beats the majority baseline</strong> on
+<code>regime_price</code> — on-chain + price features carry real (if
+modest) signal about forward-30-day return direction.</p></li>
+<li><p><strong>On-chain features add ≈ +0.05 to +0.07 macro-F1 over
+price-only</strong> for linear models (Ridge, LinearSVM), but ≈ 0 for
+tree models (which can already exploit nonlinearities in the price
+features).</p></li>
+<li><p><strong>The CNN obtains the largest absolute lift</strong>: mean
+macro-F1 = 0.325 with feature set B versus 0.247 for XGBoost — a 0.08
+gap. On the most recent fold (cycle 4 test), CNN achieves 0.413
+vs. XGBoost 0.173. Sliding 60-day context appears to capture temporal
+patterns that point-in-time tabular models miss.</p></li>
+</ol>
+<figure>
+<img src="../figures/cnn_vs_sklearn.png" style="width:100.0%"
+alt="CNN vs sklearn models on the clean regime_price label, feature set B" />
+<figcaption aria-hidden="true">CNN vs sklearn models on the clean
+regime_price label, feature set B</figcaption>
+</figure>
+<h3 id="cnn-training-dynamics">6.3 CNN training dynamics</h3>
+<p>The CNN converges within ~30 epochs on most folds, with brief
+over-fitting visible on the smallest training set (cycle 1 only, 522
+samples after windowing, 462 effective sequences). On the largest
+training set (cycles 1+2+3, 3,033 samples), CNN test macro-F1 reaches
+its peak of 0.413 around epoch 5 before the model begins to over-fit;
+early-stopping by best validation F1 is used to recover the optimum.</p>
+<figure>
+<img src="../figures/cnn_training.png" style="width:100.0%"
+alt="1D Temporal CNN training dynamics" />
+<figcaption aria-hidden="true">1D Temporal CNN training
+dynamics</figcaption>
+</figure>
+<h3 id="confusion-matrices">6.4 Confusion matrices</h3>
+<p>The leakage signature is visible in the confusion matrices:</p>
+<ul>
+<li>XGBoost on <code>regime_base</code> + B (LEAKY): correctly
+classifies almost every Distribution day on cycle 3, including correctly
+predicting 25/25 — far better than is plausible from any non-MVRV
+signal.</li>
+<li>XGBoost on <code>regime_price</code> + B (clean): performance is
+concentrated on the diagonal but with substantial off-diagonal mass;
+precision and recall on the Bear and Bull classes are roughly 0.30–0.40
+each.</li>
+</ul>
+<figure>
+<img src="../figures/confusion_matrices.png" style="width:100.0%"
+alt="Confusion matrices for selected (model, label, feature-set, fold) combinations" />
+<figcaption aria-hidden="true">Confusion matrices for selected (model,
+label, feature-set, fold) combinations</figcaption>
+</figure>
+<h3 id="feature-importance-shap">6.5 Feature importance (SHAP)</h3>
+<p>For XGBoost on the clean <code>regime_price</code> label, cycle-4
+test set, the top contributors averaged across all three classes are
+MVRV-related (still useful when not the label source), 30-day
+rate-of-change of active addresses, and Volatility-30d. The features
+that contribute most to <em>Bull</em> and <em>Bear</em> predictions
+differ — Bull predictions weight rising hash-rate growth and positive
+Puell-multiple deviations, while Bear predictions weight rising exchange
+supply ratio and negative recent-30d MVRV change.</p>
+<figure>
+<img src="../figures/shap_xgboost.png" style="width:100.0%"
+alt="SHAP feature importance, XGBoost on regime_price, cycle 4 test set" />
+<figcaption aria-hidden="true">SHAP feature importance, XGBoost on
+regime_price, cycle 4 test set</figcaption>
+</figure>
+<h3 id="cycle-4-difficulty">6.6 Cycle-4 difficulty</h3>
+<p>A separate observation: on <code>regime_price</code> cycle 4 (the
+most recent test fold), all tabular models obtain macro-F1 below 0.33.
+The cycle 4 test period (2024-04 to 2026-03) is the most ETF-influenced
+regime in BTC’s history and exhibits qualitatively different
+microstructure from cycles 2–3. The CNN’s relative outperformance there
+(+0.13 over the best tabular model) is the most notable single result of
+the study.</p>
+<hr />
+<h2 id="discussion">7. Discussion</h2>
+<h3 id="what-this-project-actually-shows">7.1 What this project actually
+shows</h3>
+<p>The honest summary is:</p>
+<ul>
+<li><p><strong>On-chain features add value, but the previously-reported
+magnitudes are inflated by label-feature circularity</strong> when MVRV
+is the label source. With proper isolation, the lift over a price-only
+baseline on a clean label is modest: +0.05 to +0.07 macro-F1 for linear
+models, ~0 for tree models, and +0.08 for a temporal CNN.</p></li>
+<li><p><strong>Temporal context matters for the most recent
+regime.</strong> Every tabular model collapses on the cycle-4 test fold;
+only the CNN — which observes 60 days of feature history — produces a
+meaningful lift. This suggests that the ETF-era (post-Jan-2024) BTC
+market is more path-dependent than earlier cycles, and that any future
+work in this area should default to sequence models.</p></li>
+<li><p><strong>Cycle-1-only training is fundamentally
+insufficient.</strong> Cycle 1 has only 555 days of usable data and
+contains no Distribution-class examples. Models trained on cycle 1 alone
+can only learn boundaries for two of three classes and predictably fail
+on cycle-2 data with all three classes present. This is not a modelling
+deficiency; it is a data-availability constraint of Bitcoin’s relatively
+short history.</p></li>
+</ul>
+<h3 id="limitations">7.2 Limitations</h3>
+<ol type="1">
+<li><p><strong>Free-tier data restrictions.</strong> The CoinMetrics
+Community API does not expose all the on-chain metrics in their full
+product (e.g. proper SOPR, long-term holder cost basis, realized
+profit/loss). Cleaner versions of features such as Realized Cap and SOPR
+could change the conclusion in either direction.</p></li>
+<li><p><strong>Only one definition of “regime”.</strong> Both label
+families are heuristic. Forward 30-day return is a particular horizon
+choice; longer or shorter horizons may give different model
+rankings.</p></li>
+<li><p><strong>No transaction costs or slippage.</strong> Even if these
+classifications were used as trading signals, the F1 scores reported
+here would not directly translate into PnL because of execution costs
+and the heavy tail of BTC intraday moves.</p></li>
+<li><p><strong>Walk-forward by halving cycle gives only 3 test
+folds.</strong> Confidence intervals are wide. A larger time series (or
+BTC-like assets such as Ethereum, where similar on-chain metrics exist)
+would tighten estimates.</p></li>
+<li><p><strong>The CNN architecture is intentionally shallow.</strong>
+Larger Transformer-based architectures might extract more from the
+60-day window, but with under 3,500 training sequences, over-fitting is
+the binding constraint.</p></li>
+</ol>
+<h3 id="what-would-change-the-conclusion">7.3 What would change the
+conclusion</h3>
+<p>The single empirical experiment that would most directly settle
+whether on-chain data is <em>broadly</em> useful would be to repeat this
+exact protocol on Ethereum, Solana, and other large-cap assets where
+comparable on-chain metrics exist, and to check whether the cycle-4 CNN
+lift replicates. If it does, the temporal-CNN-on-clean-label pattern is
+a portable result; if not, it may be specific to a particular Bitcoin
+regime.</p>
+<hr />
+<h2 id="conclusion">8. Conclusion</h2>
+<p>This project asked whether on-chain blockchain features add
+predictive value over price-only technical indicators for Bitcoin market
+regime classification. By constructing two parallel label sets
+(MVRV-threshold and forward-return) and a three-way feature ablation
+(price-only / full on-chain / on-chain without MVRV), we showed:</p>
+<ol type="1">
+<li><p>On the MVRV-derived label with MVRV in features, gradient-boosted
+trees reach macro-F1 ≈ 0.81; removing MVRV from features collapses this
+to ≈ 0.32. The ≈ 0.5 gap is a quantitative measure of MVRV self-leakage
+and is not real predictive power.</p></li>
+<li><p>On the clean forward-return label, on-chain features add a small
+but real lift (+0.05 to +0.10 macro-F1 over Majority Class baseline of
+0.147). The 1D temporal CNN with a 60-day window produces the largest
+single-fold lift (+0.30 over baseline on the cycle-4 test set).</p></li>
+<li><p>The most recent halving cycle (post-ETF) appears more
+path-dependent than earlier cycles, favoring sequence models over
+tabular models.</p></li>
+</ol>
+<p>The negative finding about MVRV circularity, and the positive finding
+about the temporal CNN on the most recent fold, are independently of
+methodological interest and replicable by re-running the included
+pipeline.</p>
+<hr />
+<h2 id="references">9. References</h2>
+<ol type="1">
+<li><p>Mahmudov, M. and Puell, D. <em>MVRV Z-Score: A Macro Oscillator
+for Bitcoin Cycle Tops and Bottoms.</em> Glassnode Insights, October
+2018. https://insights.glassnode.com/mastering-the-mvrv-ratio/</p></li>
+<li><p>Nascimento, R. et al. <em>Analysis of Bitcoin Trends Through the
+Integration of On-Chain Financial Indicators and Machine Learning.</em>
+In: Lecture Notes in Computer Science, Springer, 2025.
+https://link.springer.com/chapter/10.1007/978-3-031-96997-3_3</p></li>
+<li><p>Larkou, A. et al. <em>Using Machine and Deep Learning Models,
+On-Chain Data, and Technical Analysis for Predicting Bitcoin Price
+Direction and Magnitude.</em> Engineering Applications of Artificial
+Intelligence, 2025.
+https://www.sciencedirect.com/science/article/abs/pii/S0952197625010875</p></li>
+<li><p>scikit-learn developers. <em>TimeSeriesSplit — scikit-learn 1.8.0
+documentation.</em>
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html</p></li>
+<li><p>Lundberg, S. M. and Lee, S.-I. <em>A Unified Approach to
+Interpreting Model Predictions.</em> NeurIPS, 2017.</p></li>
+</ol>
+<hr />
+<h2 id="appendix-a-reproducibility">Appendix A — Reproducibility</h2>
+<p>Full reproduction of all results in this report:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> final</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv venv</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> venv/bin/activate</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> src/data_collection.py        <span class="co"># ~30s, network needed</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> src/feature_engineering.py    <span class="co"># ~5s</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> src/models.py                 <span class="co"># ~3 min</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> src/temporal_cnn.py           <span class="co"># ~5 min on Apple MPS</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> src/visualization.py          <span class="co"># ~30s</span></span></code></pre></div>
+<p>Random seeds are fixed at 42 for NumPy, sklearn, XGBoost, and
+PyTorch. The CNN may show ±0.02 macro-F1 variance across re-runs due to
+non-deterministic GPU/MPS kernels.</p>
+<h2 id="appendix-b-result-file-inventory">Appendix B — Result file
+inventory</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr>
+<th>File</th>
+<th>Records</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>models/results_full.json</code></td>
+<td>90</td>
+<td>sklearn × {2 labels × 3 feature-sets × 5 models × 3 folds}</td>
+</tr>
+<tr>
+<td><code>models/sensitivity_results.json</code></td>
+<td>24</td>
+<td>conservative / aggressive MVRV thresholds × {2 feature-sets × 2
+models × 3 folds}</td>
+</tr>
+<tr>
+<td><code>models/cnn_results.json</code></td>
+<td>12</td>
+<td>CNN × {2 labels × 2 feature-sets × 3 folds}</td>
+</tr>
+</tbody>
+</table>
+<p>Each record carries: model, label, fold, train/test sizes, features
+actually used (after NaN drop), macro-F1, weighted-F1, accuracy,
+per-class precision / recall / F1, full 3 × 3 confusion matrix, and (for
+CNN) per-epoch training loss and test macro-F1.</p>
+</body>
+</html>
